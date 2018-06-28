@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.cheng.mypage.DampView
+        android:id="@+id/dampview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 此处必须设置imageview的scaleType为centerCrop,当然在代码中设置也可以 -->
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:onClick="onImgClick"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/test" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n
+                我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n我是占位置的\n"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </com.example.cheng.mypage.DampView>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fcfcfc"
+        android:gravity="center"
+        android:text="这里是标题。。。"
+        android:textSize="18sp" />
+
+</RelativeLayout>
